@@ -1,20 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Awesome Day Planner</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Awesome Day To-Do app!</title>
 </head>
+
 <body>
-    <h1>Responsive Website</h1>
+  <!-- Navbar Component -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+          <img src="/home/tania/techreturners/todo_application/images/to-do-list.png" alt="planner logo" class="img-fluid max-width: 10% height: auto"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <p>
-        This website is a demo of me trying different media queries
-    </p>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Timetable</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Remember</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shopping List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Water</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <button type="button" class="btn btn-secondary">Secondary</button>
+  <!-- Jumbotron -->
+  <!-- need to find a good background image -->
+  <div class="jumbotron jumbor=tron-fluid"
+    style="background:url(Need to find background image) no-repeat; background-size: cover;">
+    <div class="my-5 bg-secondary text-center text-white">
+      <h1 class="display-4">"Make today awesome"</h1>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- first row has two columns equal size -->
+    <div class="row">
+      <!-- column one is a timetable list -->
+
+      <!-- column 2 is things to remember list -->
+    </div>
+    <!-- second row has two columns equal size -->
+    <div class="row">
+      <!-- Shopping List Section -->
+      <div class="col-md-6">
+          <div class="main-shopping-input-wrap">
+            <div class="main-todo-input fl-wrap">
+              <div class="main-todo-input-item"> <input type="text" id="todo-list-item"
+                  placeholder="What do you need to buy today?"> 
+              </div> 
+              <button class="add-items main-search-button">ADD</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+              <div class="main-todo-input-wrap">
+                <div class="main-todo-input fl-wrap todo-listing">
+                  <ul id="list-items"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- column 2 is a to-do list -->
+
+      <div class="col-md-6">
+        <div class="main-todo-input-wrap">
+          <div class="main-todo-input fl-wrap">
+            <div class="main-todo-input-item"> <input type="text" id="todo-list-item"
+                placeholder="What will you do today?"> 
+            </div> 
+            <button class="add-items main-search-button">ADD</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+            <div class="main-todo-input-wrap">
+              <div class="main-todo-input fl-wrap todo-listing">
+                <ul id="list-items"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+
+    <!-- third row is water checklist -->
+    <div class="row">
+    </div>
+    <!-- fourth row is water checklist --> -->
+    <div class="row">
+    </div>
+  </div>
+  
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+</footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
